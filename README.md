@@ -11,6 +11,7 @@ npx install-peerdeps --dev eslint-config-airbnb
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser prettier eslint-config-prettier eslint-plugin-prettier
 
 yarn remove eslint
+yarn
 ```
 
 ### css (sass or styled)
