@@ -3,7 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended", "airbnb"],
+  "extends": ["airbnb", "airbnb/hooks", "plugin:react/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -14,10 +14,11 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "no-console": "off",
-    "linebreak-style": "off",
+    "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
     "no-use-before-define": "off",
+    "no-console": "off",
+    "linebreak-style": "off",
     "import/extensions": "off"
   },
   "settings": {
