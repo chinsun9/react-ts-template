@@ -1,50 +1,74 @@
 # my react ts template
 
-## yarn add ...
+## commands
 
-### react ts + eslint + prettier
+```sh terminal
+# ts react cra ; https://create-react-app.dev/docs/getting-started#creating-a-typescript-app
+yarn create react-app . --template typescript
 
+# eslint
+yarn eslint --init
+√ How would you like to use ESLint? · style
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · react
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · browser
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · airbnb
+√ What format do you want your config file to be in? · JSON
+
+# install eslint deps
+yarn add -D \
+    eslint-plugin-react@^7.21.5 \
+    @typescript-eslint/eslint-plugin@latest \
+    eslint-config-airbnb@latest \
+    eslint@^7.2.0 \
+    eslint-plugin-import@^2.22.1 \
+    eslint-plugin-jsx-a11y@^6.4.1 \
+    eslint-plugin-react-hooks@^4 \
+    @typescript-eslint/parser@latest
+
+# prettier
+yarn add -D \
+    prettier  \
+    eslint-plugin-prettier  \
+    eslint-config-prettier
+
+# tsconfig path alias
+yarn add -D eslint-import-resolver-typescript
 ```
-npx create-react-app . --template typescript
 
-npx install-peerdeps --dev eslint-config-airbnb
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser prettier eslint-config-prettier eslint-plugin-prettier
+## package.json
 
-yarn remove eslint
-yarn
+- remove `eslintConfig`
+- use _.eslintrc_ file
+
+## tsconfig.json
+
+```jsonc tsconfig.json
+// tsconfig.json
+{
+  "compilerOptions": {
+    // ...
+    "baseUrl": "./src"
+  }
+}
 ```
 
-### css (sass or styled)
+- use `baseUrl`, `path alias`
 
-```bash
-# sass
-yarn add node-sass
-yarn add prettier-plugin-style-order
+## .eslintrc.json
 
-# or
+- https://github.com/chinsun9/react-ts-template/blob/v20210827/.eslintrc.json
 
-# styled
-yarn add @emotion/react @emotion/styled
-```
+## .prettierrc
 
-### useful packages
-
-```bash
-# time
-yarn add dayjs
-
-# routing
-yarn add react-router-dom
-
-# head edit
-yarn add react-helmet-async
-
-# icon
-yarn add @material-ui/core @material-ui/icons
-
-# chart
-yarn add react-chartjs-2 chart.js
-
-# table
-yarn add react-table react-table-sticky
+```jsonc .prettierrc
+// .prettierrc
+{
+  "endOfLine": "auto",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}
 ```
