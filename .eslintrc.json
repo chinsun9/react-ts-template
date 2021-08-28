@@ -25,7 +25,13 @@
     "no-use-before-define": "off",
     "no-console": "off",
     "linebreak-style": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "enableDangerousAutofixThisMayCauseInfiniteLoops": true
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
