@@ -21,12 +21,14 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "react/prop-types": "off",
-    "react/jsx-filename-extension": "off",
-    "no-use-before-define": "off",
-    "no-console": "off",
-    "linebreak-style": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "import/extensions": "off",
+    "linebreak-style": "off",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
     "react-hooks/exhaustive-deps": [
       "warn",
       {
