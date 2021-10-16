@@ -2,7 +2,7 @@ import React from 'react';
 
 const App = () => (
   <div>
-    @chinsun9/my-react-ts-template
+    @chinsun9/react-ts-template
   </div>
 );
 
