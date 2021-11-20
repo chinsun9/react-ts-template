@@ -50,12 +50,10 @@ yarn add -D eslint-import-resolver-typescript
 {
   "compilerOptions": {
     // ...
-    "baseUrl": "./src"
+    "baseUrl": "."
   }
 }
 ```
-
-- use `baseUrl`, `path alias`
 
 ## .eslintrc.json
 
