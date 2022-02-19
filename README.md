@@ -13,3 +13,9 @@ yarn add -D prettier eslint-config-prettier
 yarn add @emotion/css @emotion/react @emotion/babel-preset-css-prop
 yarn add -D react-app-rewired customize-cra
 ```
+
+## mobx
+
+```
+yarn add mobx mobx-react-lite
+```
